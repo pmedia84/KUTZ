@@ -7,6 +7,8 @@
 <meta property="og:description" content="Contact us to find out how you can have this design for your business." />
 <meta property="og:image" content="https://www.parrotmedia.co.uk/img/portfolio/barbers.png"/>
 <meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.parrotmedia.co.uk/kutz/" />
+
     <title>Kutz - Making You look The Best You Ever Have</title>
     <!-- Nav Bar -->
     <?php include("inc/nav.inc.php"); ?>

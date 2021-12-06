@@ -1,0 +1,57 @@
+.text-box{
+    color: $whitetext;
+    padding: 1rem;
+   h1{
+       font-size: 1.5rem;
+      
+   }
+  
+}
+
+.article-brand{
+    font-size: 0.9rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+.text-box-title{
+    border-left: 1px solid $primarycol;
+    padding-left: 2px;
+}
+
+
+
+.opening-hrs{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: black;
+    
+
+}
+
+@media (min-width:768px){
+    .opening-hrs{
+        max-width: 300px;
+    }
+}
+.contact-socials{
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 1.5rem;
+    a{
+        color: $primarycol;
+    }
+    
+}
+
+.contact-socials a:hover, a:focus{
+  color: $whitetext;
+        opacity: 0.8;
+   
+}
+

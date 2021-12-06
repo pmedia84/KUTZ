@@ -1,0 +1,32 @@
+.hero-btn{
+    text-decoration: none;
+    background-color: $primarycol;
+    padding: 0.375rem 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: $whitetext;
+    border: 1px solid $primarycol;
+    border-radius: 0.25rem;
+    
+}
+
+.btn{
+    text-decoration: none;
+    background-color: $primarycol;
+    padding: 0.375rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $whitetext;
+    border: 1px solid $primarycol;
+    border-radius: 0.25rem;
+    display: inline-block;
+    margin-block: 0.5rem;
+}
+.secondary{
+    background-color: rgba(255, 255, 255, 0.103);
+   
+}
+
+.cta{
+    font-size: 1.5rem;
+}

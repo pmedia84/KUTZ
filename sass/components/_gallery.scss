@@ -1,0 +1,45 @@
+// Image Gallery For Index Page
+
+.gallery{
+    display: grid;
+    gap: .5rem;
+    //grid-template-columns: repeat(3, 1fr);
+}
+.img-gallery-item{
+    position: relative;
+    
+    margin: 0 auto;
+
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 6px 8px rgba(0,0,0,0.11),
+              0 8px 16px rgba(0,0,0,0.11);
+
+
+}
+.gallery-img-text{
+    position: absolute;
+    bottom: 0;
+    background: rgba($primarycol,0.7);
+    padding: 0.5rem;
+    color: $whitetext;
+    width: 100%;
+}
+
+
+
+
+@media (min-width: 768px){
+    .gallery{
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+    .gallery-img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .row-span-2{
+        grid-row: 1 / span 2;
+    }
+}

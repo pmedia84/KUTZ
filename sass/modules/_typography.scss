@@ -1,0 +1,21 @@
+// font syles etc
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Poiret+One&display=swap');
+
+body{
+    font-family: 'Poiret One', cursive;
+}
+
+h1, h2, h3{
+    font-family: 'Marcellus', serif;
+}
+
+p{
+    line-height: 1.5;
+}
+
+.section-title{
+    text-align: center;
+}
+.section-title h2{
+    font-size: 3rem;
+}

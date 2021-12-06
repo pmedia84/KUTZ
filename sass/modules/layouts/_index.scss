@@ -1,0 +1,38 @@
+.story{
+    background-color: $darkcolor;
+    padding: 3.5rem 0 3.5rem 0;
+
+}
+
+.intro{
+    text-align: center;
+    background-image: url("../img/razor.svg");
+    background-repeat:no-repeat;
+    background-size: 100px;
+    background-position-x: right;
+padding-bottom: 3.5rem;
+}
+
+.opening-hrs{
+    padding: 2.5rem 1rem 2.5rem 1rem;
+    background-image: url("../img/clock.svg");
+    background-repeat: no-repeat;
+    background-size: 75px;
+    background-position: top right;
+    height: max-content;
+}
+
+@media (min-width:768px){
+    .story-img{
+        height: 400px;
+        justify-self: end;
+    }
+    .our-story{
+        justify-self: end;
+        align-self: center;
+    }
+}
+
+
+
+

@@ -1,0 +1,143 @@
+.pricecard{
+    display: flex;
+    background-color: rgba($primarycol, 0.10);
+    padding: 1rem;
+}
+
+.pricecard-icon{
+    padding-right: 1rem;
+    font-size: 1.25rem;
+    img{
+        width: 35px;
+    }
+}
+.pricecard-title-price{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.price, .pricecard-title{
+    font-weight: 900;
+}
+.pricecard-text{
+    flex-grow: 1;
+}
+
+.pricecard-body{
+    flex-grow: 1;
+}
+
+.pricecard-footer{
+   
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 1rem;
+    
+}
+
+
+////// Staff Image Cards
+
+.staff-img-card{
+    max-width: 400px;
+    margin: 0 auto;
+    transition: transform 500ms ease-in-out;
+    overflow: hidden;
+
+}
+
+.staff-img-card:hover,
+.staff-img-card:focus-within{
+    transform: scale(1.02);
+    transition: transform  500ms ease-in-out;
+}
+
+.staff-img-card:hover .staff-img-card-overlay,
+.staff-img-card:focus-within .staff-img-card-overlay{
+    transform: translateY(0);
+    transition: transform  500ms ease-in-out;
+   
+}
+
+.staff-img-card:focus-within .staff-img-card-overlay{
+    transition-duration: 0ms;
+}
+.staff-img-card:hover .staff-img-card-overlay >*,
+.staff-img-card:focus-within .staff-img-card-overlay >*{
+    opacity: 1;
+    transition: opacity 600ms linear;
+    transition-delay: 200ms;
+}
+.staff-img-card-content{
+    
+    position: relative;
+}
+
+.staff-img-card-overlay{
+    position: absolute;
+    display: grid;
+    place-items: end;
+    top: 0;
+    height: 100%;
+    background: rgba($primarycol,0.2);
+    padding: 0.5rem;
+    color: $whitetext;
+    width: 100%;
+    
+    
+    p{
+        font-size: 1.5rem;
+    }
+}
+
+@media (hover){
+    .staff-img-card-overlay{
+        transform: translateY(110%);
+    transition: transform 500ms ease-in-out;
+    
+    }
+
+    .staff-card-socials, .staff-img-text{
+        opacity: 0;
+        transition: opacity 500ms ease-in-out;
+    }
+}
+
+.staff-card-socials{
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    
+    font-size: 1.5rem;
+    a{
+        color: $whitetext;
+    }
+    
+}
+
+.staff-card-footer{
+    background-color: $primarycol;
+    padding: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+@media (prefers-reduced-motion: reduce){
+    .staff-img-card-overlay{
+        transform: translateY(110%);
+    transition: transform 500ms ease-in-out;
+    
+    }
+
+    .staff-card-socials, .staff-img-text{
+        opacity: 0;
+        transition: opacity 500ms ease-in-out;
+    }
+}

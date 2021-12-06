@@ -555,7 +555,7 @@ footer p, footer h2 {
 .staff-img-card-overlay {
   position: absolute;
   display: grid;
-  place-items: end;
+  place-items: center;
   top: 0;
   height: 100%;
   background: rgba(190, 125, 55, 0.2);

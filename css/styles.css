@@ -353,7 +353,6 @@ footer p, footer h2 {
 
 @media (min-width: 768px) {
   .story-img {
-    height: 400px;
     justify-self: end;
   }
 
